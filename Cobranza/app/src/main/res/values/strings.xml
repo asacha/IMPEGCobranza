@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cobranza</string>
+    <string name="tv_title">Por favor inicia sesión para continuar</string>
+    <string name="et_client_number">Número de Cliente</string>
+    <string name="et_password">Contraseña</string>
+    <string name="btn_login">Iniciar Sesión</string>
+</resources>
