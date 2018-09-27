@@ -1,3 +1,9 @@
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.IO.Compression.dll
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\VBCSCompiler.exe
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\ApplicationInsights.config
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\CobranzaAPI.dll.config
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\CobranzaAPI.dll
@@ -9,13 +15,9 @@ C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\ro
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\csi.exe.config
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\csi.rsp
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -25,7 +27,6 @@ C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\ro
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.Diagnostics.Process.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.IO.Compression.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.IO.FileSystem.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -48,7 +49,6 @@ C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\ro
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\vbc.exe
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\vbc.exe.config
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\vbc.rsp
-C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\VBCSCompiler.exe
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\roslyn\VBCSCompiler.exe.config
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\Antlr3.Runtime.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\CobranzaAPI\bin\BusinessEntity.dll

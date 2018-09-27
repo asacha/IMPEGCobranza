@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Invoice"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".view.InvoiceDetailActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvInvoiceNumber"
+        style="@style/Invoice.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7AF1129B" />
+
+    <TextView
+        android:id="@+id/tvInvoiceCompany"
+        style="@style/Invoice.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EG Transportes" />
+
+    <TextView
+        android:id="@+id/tvInvoiceTPI"
+        style="@style/Invoice.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EPA070313S59" />
+
+    <TextView
+        android:id="@+id/tvInvoiceDate"
+        style="@style/Invoice.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2018-09-26 10:19:53" />
+
+    <TextView
+        android:id="@+id/tvInvoiceAmount"
+        style="@style/Invoice.Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$15,000.00" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnPaymentConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPaymentConfirmationClicked"
+            android:text="@string/btn_payment_confirmation" />
+
+        <Button
+            android:id="@+id/btnCheckLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnPaymentConfirmation"
+            android:onClick="onViewLogClicked"
+            android:text="@string/btn_view_invoice_log" />
+    </RelativeLayout>
+</LinearLayout>

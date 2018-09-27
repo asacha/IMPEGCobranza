@@ -42,5 +42,9 @@
     <style name="Invoice">
         <item name="android:padding">10dp</item>
     </style>
+
+    <style name="Invoice.Field">
+        <item name="android:textSize">20sp</item>
+    </style>
     <!--endregion-->
 </resources>

@@ -4,4 +4,9 @@
     <string name="et_client_number">Número de Cliente</string>
     <string name="et_password">Contraseña</string>
     <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_payment_confirmation">Confirmar Pago</string>
+    <string name="btn_view_invoice_log">Ver Actividad</string>
+    <string name="btn_load_photo">Cargar Foto</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="et_amount">Importe</string>
 </resources>

@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import com.freelance.ascstb.cobranza.R
+import com.freelance.ascstb.cobranza.utils.Keys
 import com.freelance.ascstb.cobranza.viewmodel.LoginViewModel
 
 class LoginActivity : AppCompatActivity() {
@@ -27,8 +28,8 @@ class LoginActivity : AppCompatActivity() {
 
             if (loginResponse!!.token != null && loginResponse.token!!.isNotEmpty()) {
                 val intent = Intent(applicationContext, InvoiceActivity::class.java)
-                intent.putExtra("TOKEN", loginResponse.token)
-                intent.putExtra("CLIENT_NUMBER", clientNumber)
+                intent.putExtra(Keys.TOKEN, loginResponse.token)
+                intent.putExtra(Keys.CLIENT_NUMBER, clientNumber)
 
                 startActivity(intent)
             }
