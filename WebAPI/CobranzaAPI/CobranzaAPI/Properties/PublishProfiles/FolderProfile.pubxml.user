@@ -22,16 +22,16 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/26/2018 14:11:16</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>09/26/2018 15:32:06</publishTime>
+      <publishTime>09/26/2018 21:19:07</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>09/26/2018 15:32:06</publishTime>
+      <publishTime>09/26/2018 21:19:07</publishTime>
     </File>
     <File Include="bin/BusinessData.dll">
-      <publishTime>09/26/2018 15:31:41</publishTime>
+      <publishTime>09/26/2018 21:18:42</publishTime>
     </File>
     <File Include="bin/BusinessData.pdb">
-      <publishTime>09/26/2018 15:31:41</publishTime>
+      <publishTime>09/26/2018 21:18:42</publishTime>
     </File>
     <File Include="bin/BusinessEntity.dll">
       <publishTime>09/26/2018 15:31:41</publishTime>
@@ -40,16 +40,16 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/26/2018 15:31:41</publishTime>
     </File>
     <File Include="bin/BusinessLogic.dll">
-      <publishTime>09/26/2018 15:31:42</publishTime>
+      <publishTime>09/26/2018 21:18:42</publishTime>
     </File>
     <File Include="bin/BusinessLogic.pdb">
-      <publishTime>09/26/2018 15:31:42</publishTime>
+      <publishTime>09/26/2018 21:18:42</publishTime>
     </File>
     <File Include="bin/CobranzaAPI.dll">
-      <publishTime>09/26/2018 15:31:49</publishTime>
+      <publishTime>09/26/2018 21:18:51</publishTime>
     </File>
     <File Include="bin/CobranzaAPI.pdb">
-      <publishTime>09/26/2018 15:31:49</publishTime>
+      <publishTime>09/26/2018 21:18:51</publishTime>
     </File>
     <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
       <publishTime>02/01/2018 12:17:28</publishTime>
@@ -340,7 +340,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/26/2018 14:10:33</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>09/26/2018 15:31:53</publishTime>
+      <publishTime>09/26/2018 21:18:54</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>09/26/2018 14:10:32</publishTime>

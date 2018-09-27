@@ -12,7 +12,7 @@ namespace BusinessData.IMPEG.dbo
     {
         public UsuarioToken()
         {
-            NombreConexion = "cxnEscritorioMedico";
+            NombreConexion = "cxnCobranza";
         }
 
         public BusinessEntity.DataHandler Consultar(BusinessEntity.QueryOptions Opcion, BusinessEntity.IMPEG.dbo.UsuarioToken oBE)

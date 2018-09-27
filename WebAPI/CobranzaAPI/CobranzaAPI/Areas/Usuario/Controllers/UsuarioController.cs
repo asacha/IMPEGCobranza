@@ -5,13 +5,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Results;
 
 namespace CobranzaAPI.Areas.Usuario.Controllers
 {
     public class UsuarioController : ApiController
     {
-        [HttpGet]
-        public string Autenticar(string NumeroCliente, string Contrasena)
+        [System.Web.Http.HttpGet]
+        public JsonResult<LoginResult> Autenticar(string NumeroCliente, string Contrasena)
         {
             string Resultado = string.Empty;
             string MensajeError = string.Empty;
@@ -22,7 +23,7 @@ namespace CobranzaAPI.Areas.Usuario.Controllers
             if (NumeroCliente == null || Contrasena == null)
             {
                 Resultado = "[{\"Error\":true,\"ErrorId\":1010,\"MensajeError\":\"Parámetros no válidos.\"}]";
-                return Resultado;
+                return Json(new LoginResult(true, 1010, "Parámetros no válidos", ""));
             }
             #endregion
 
@@ -37,14 +38,14 @@ namespace CobranzaAPI.Areas.Usuario.Controllers
             #region Validaciones
             if (oDH.Error)
             {
-                Resultado = "[{\"Error\":true,\"ErrorId\":1020,\"MensajeError\":\"" + oDH.MensajeError + "\"}]"; ;
-                return Resultado;
+                Resultado = "[{\"Error\":true,\"ErrorId\":1020,\"MensajeError\":\"" + oDH.MensajeError + "\"}]";
+                return Json(new LoginResult(true, 1020, oDH.MensajeError, ""));
             }
 
             if (!oDH.ContieneInformacion)
             {
                 Resultado = "[{\"Error\":true,\"ErrorId\":1030,\"MensajeError\":\"Lo sentimos, ocurrió un problema.\"}]";
-                return Resultado;
+                return Json(new LoginResult(true, 1030, "Lo sentimos, ocurrió un problema.", ""));
             }
 
             DataRow drValidacion = oDH.Resultado.Tables[0].Rows[0];
@@ -76,10 +77,27 @@ namespace CobranzaAPI.Areas.Usuario.Controllers
             else
             {
                 Resultado = "[{\"Error\":true,\"ErrorId\":1100,\"MensajeError\":\"" + MensajeError + "\"}]";
+                return Json(new LoginResult(true, 1100, MensajeError, ""));
             }
             #endregion
 
-            return Resultado;
+            return Json(new LoginResult(Error, ErrorId, MensajeError, oDH.Resultado.Tables[0].Rows[0]["Token"].ToString()));
         }
+    }
+
+    public class LoginResult
+    {
+        public LoginResult(bool error, int errorId, string mensajeError, string token)
+        {
+            Error = error;
+            ErrorId = errorId;
+            MensajeError = mensajeError;
+            Token = token;
+        }
+
+        public bool Error { get; set; }
+        public int ErrorId { get; set; }
+        public string MensajeError { get; set; }
+        public string Token { get; set; }
     }
 }
