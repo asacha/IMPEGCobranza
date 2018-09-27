@@ -3,7 +3,8 @@ package com.freelance.ascstb.cobranza.model.entity
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class LoginResponse {
+class InvoiceResponse {
+
     @SerializedName("Error")
     @Expose
     var error: Boolean? = null
@@ -13,11 +14,11 @@ class LoginResponse {
     @SerializedName("MensajeError")
     @Expose
     var mensajeError: String? = null
-    @SerializedName("Token")
+    @SerializedName("Facturas")
     @Expose
-    var token: String? = null
+    var facturas: List<Factura>? = null
 
     override fun toString(): String {
-        return "LoginResponse: { error: $error, errorId: $errorId, mensajeError: $mensajeError, token: $token }"
+        return "InvoiceResponse: { error: $error, errorId: $errorId, mensajeError: $mensajeError, facturas: ${facturas!!.size}"
     }
 }
