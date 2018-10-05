@@ -3,3 +3,4 @@ C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\BusinessEntity\bin
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\BusinessEntity\obj\Release\BusinessEntity.csproj.CoreCompileInputs.cache
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\BusinessEntity\obj\Release\BusinessEntity.dll
 C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\BusinessEntity\obj\Release\BusinessEntity.pdb
+C:\Proyectos\Freelance\IMPEG\IMPEGCobranza\WebAPI\CobranzaAPI\BusinessEntity\obj\Release\BusinessEntity.csprojAssemblyReference.cache

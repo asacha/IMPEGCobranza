@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.freelance.ascstb.cobranza.R
-import com.freelance.ascstb.cobranza.model.entity.Factura
+import com.freelance.ascstb.model.entity.Factura
 
 class RVInvoiceAdapter(private var invoiceList: MutableList<Factura>, private val listener: (Factura) -> Unit) : RecyclerView.Adapter<RVInvoiceAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): ViewHolder {

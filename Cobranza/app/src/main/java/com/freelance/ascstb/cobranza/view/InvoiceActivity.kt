@@ -10,7 +10,7 @@ import android.support.v7.widget.RecyclerView
 import android.util.Log
 import com.freelance.ascstb.cobranza.R
 import com.freelance.ascstb.cobranza.adapter.RVInvoiceAdapter
-import com.freelance.ascstb.cobranza.model.entity.Factura
+import com.freelance.ascstb.model.entity.Factura
 import com.freelance.ascstb.cobranza.utils.Keys
 import com.freelance.ascstb.cobranza.viewmodel.InvoiceViewModel
 

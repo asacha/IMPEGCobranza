@@ -4,10 +4,10 @@ import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.util.Log
-import com.freelance.ascstb.cobranza.model.data.DataRepository
-import com.freelance.ascstb.cobranza.model.data.local.LocalDataSource
-import com.freelance.ascstb.cobranza.model.data.remote.RemoteDataSource
-import com.freelance.ascstb.cobranza.model.entity.InvoiceResponse
+import com.freelance.ascstb.model.data.DataRepository
+import com.freelance.ascstb.model.data.local.LocalDataSource
+import com.freelance.ascstb.model.data.remote.RemoteDataSource
+import com.freelance.ascstb.model.entity.InvoiceResponse
 
 class InvoiceViewModel(application: Application) : AndroidViewModel(application) {
     private val dataRepository = DataRepository(RemoteDataSource(), LocalDataSource(application))

@@ -1,4 +1,4 @@
-package com.freelance.ascstb.cobranza.model.entity
+package com.freelance.ascstb.model.entity
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

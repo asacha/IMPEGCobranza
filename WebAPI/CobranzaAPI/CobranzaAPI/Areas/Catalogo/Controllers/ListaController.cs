@@ -15,18 +15,42 @@ namespace CobranzaAPI.Areas.Catalogo.Controllers
         {
             ListaSucursalResponse respuesta = new ListaSucursalResponse(false, 0, string.Empty);
 
-            //Validar Token
+            #region Validar Token
             if (!BusinessLogic.Validacion.TokenValido(Token))
             {
                 respuesta = new ListaSucursalResponse(true, 9010, "Token no válido");
                 return Json(respuesta);
             }
+            #endregion
 
-            //llamar a BD y obtener las Sucursales
-            #region Código simulado
-            respuesta.Sucursales.Add(new Sucursal(2080, "Toluca"));
-            respuesta.Sucursales.Add(new Sucursal(5030, "Guadalajara"));
-            respuesta.Sucursales.Add(new Sucursal(1025, "Monterrey"));
+            #region llamar a BD y obtener las Sucursales
+            BusinessEntity.IMPEG.Cobranza.Sucursal oSucursalBE = new BusinessEntity.IMPEG.Cobranza.Sucursal();
+            oSucursalBE.Baja = false;
+
+            BusinessEntity.DataHandler oDH = BusinessLogic.Util.Consultar(BusinessEntity.QueryOptions.Consultar_ParaLista, oSucursalBE);
+            #endregion
+
+            #region Validaciones
+            if (oDH.Error)
+            {
+                respuesta.Error = true;
+                respuesta.ErrorId = 9011;
+                respuesta.MensajeError = "Lo sentimos, ocurrió un problema.";
+            }
+
+            if (!oDH.ContieneInformacion)
+            {
+                respuesta.Error = true;
+                respuesta.ErrorId = 9012;
+                respuesta.MensajeError = "No pudimos obtener el listado de sucursales.";
+            }
+            #endregion
+
+            #region Asignación de información
+            foreach (System.Data.DataRow dr in oDH.Resultado.Tables[0].Rows)
+            {
+                respuesta.Sucursales.Add(new Sucursal(dr));
+            }
             #endregion
 
             return Json(respuesta);
@@ -37,21 +61,42 @@ namespace CobranzaAPI.Areas.Catalogo.Controllers
         {
             ListaBancoResponse respuesta = new ListaBancoResponse(false, 0, string.Empty);
 
-            //Validar Token
+            #region Validar Token
             if (!BusinessLogic.Validacion.TokenValido(Token))
             {
                 respuesta = new ListaBancoResponse(true, 9020, "Token no válido");
                 return Json(respuesta);
             }
+            #endregion
 
-            //llamar a BD y obtener las Bancos
-            #region Código simulado
-            respuesta.Bancos.Add(new Banco(1, "BANREGIO", "1234"));
-            respuesta.Bancos.Add(new Banco(2, "HSBC", "4567"));
-            respuesta.Bancos.Add(new Banco(3, "BANORTE", "8569"));
-            respuesta.Bancos.Add(new Banco(4, "BANAMEX", "7485"));
-            respuesta.Bancos.Add(new Banco(5, "BANCOMER", "1402"));
+            #region llamar a BD y obtener las Sucursales
+            BusinessEntity.IMPEG.Cobranza.Banco oBancoBE = new BusinessEntity.IMPEG.Cobranza.Banco();
+            oBancoBE.Baja = false;
 
+            BusinessEntity.DataHandler oDH = BusinessLogic.Util.Consultar(BusinessEntity.QueryOptions.Consultar_ParaLista, oBancoBE);
+            #endregion
+
+            #region Validaciones
+            if (oDH.Error)
+            {
+                respuesta.Error = true;
+                respuesta.ErrorId = 9021;
+                respuesta.MensajeError = "Lo sentimos, ocurrió un problema.";
+            }
+
+            if (!oDH.ContieneInformacion)
+            {
+                respuesta.Error = true;
+                respuesta.ErrorId = 9022;
+                respuesta.MensajeError = "No pudimos obtener el listado de bancos.";
+            }
+            #endregion
+
+            #region Asignación de información
+            foreach (System.Data.DataRow dr in oDH.Resultado.Tables[0].Rows)
+            {
+                respuesta.Bancos.Add(new Banco(dr));
+            }
             #endregion
 
             return Json(respuesta);
@@ -100,6 +145,12 @@ namespace CobranzaAPI.Areas.Catalogo.Controllers
             SucursalDescripcion = sucursalDescripcion;
         }
 
+        public Sucursal(System.Data.DataRow dr)
+        {
+            SucursalId = Convert.ToInt32(dr["SucursalId"]);
+            SucursalDescripcion = dr["SucursalDescripcion"].ToString();
+        }
+
         public int SucursalId { get; set; }
         public string SucursalDescripcion { get; set; }
     }
@@ -111,6 +162,13 @@ namespace CobranzaAPI.Areas.Catalogo.Controllers
             BancoId = bancoId;
             BancoDescripcion = bancoDescripcion;
             Clave = clave;
+        }
+
+        public Banco(System.Data.DataRow dr)
+        {
+            BancoId = Convert.ToInt32(dr["BancoId"]);
+            BancoDescripcion = dr["BancoDescripcion"].ToString();
+            Clave = dr["Clave"].ToString();
         }
 
         public int BancoId { get; set; }

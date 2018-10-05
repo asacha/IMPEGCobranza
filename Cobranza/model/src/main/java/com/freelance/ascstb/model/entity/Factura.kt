@@ -1,4 +1,4 @@
-package com.freelance.ascstb.cobranza.model.entity
+package com.freelance.ascstb.model.entity
 
 import android.os.Parcel
 import android.os.Parcelable

@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\ConexionSQL.cs" />
+    <Compile Include="IMPEG\Cobranza\admClientes.cs" />
+    <Compile Include="IMPEG\Cobranza\admDocumentos.cs" />
+    <Compile Include="IMPEG\Cobranza\admMovimientos.cs" />
+    <Compile Include="IMPEG\Cobranza\Banco.cs" />
+    <Compile Include="IMPEG\Cobranza\Sucursal.cs" />
     <Compile Include="IMPEG\dbo\Usuario.cs" />
     <Compile Include="IMPEG\dbo\UsuarioToken.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

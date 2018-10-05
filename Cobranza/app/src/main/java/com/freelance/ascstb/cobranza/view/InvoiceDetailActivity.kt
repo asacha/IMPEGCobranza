@@ -7,7 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import com.freelance.ascstb.cobranza.R
-import com.freelance.ascstb.cobranza.model.entity.Factura
+import com.freelance.ascstb.model.entity.Factura
 import com.freelance.ascstb.cobranza.utils.Keys
 
 class InvoiceDetailActivity : AppCompatActivity() {
